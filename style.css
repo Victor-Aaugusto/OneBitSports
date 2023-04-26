@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.LogoHeader {
+  width: 140px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #292929;
+  width: 100%;
+  min-height: 40px;
+  padding: 30px;
+  gap: 8px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .BtnNavBarGroup {
+  display: flex;
+  gap: 15px;
+}
+.header .BtnNavBar {
+  color: white;
+  font-size: 16px;
+  padding: 6px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header .BtnNavBar.BtnNavBar:hover {
+  border-bottom: 2px solid black;
+}
+
+.sectiontitle {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.sectiondescription {
+  text-align: center;
+  color: #383838;
+}
+
+.gridcontent {
+  flex: 1 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "maincontent sidebarcontent";
+  padding: 20px;
+}
+
+.maincontet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: maincontent;
+}
+.maincontet .categorycard {
+  width: 280px;
+  height: 380px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.maincontet .categorycard.categorycard:hover {
+  border: 2px solid black;
+}
+.maincontet .maintitle {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+  text-align: center;
+}
+.maincontet .maindescription {
+  padding: 6px;
+}
+
+.maincardImg {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+
+.sidebarcontent {
+  background-color: #383838;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 20px;
+  grid-area: sidebarcontent;
+}
+
+.sidebarcard {
+  width: 85%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sidebarcard.sidebarcard:hover {
+  border: 1px solid gainsboro;
+}
+
+.sidebarimg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.logofooter {
+  width: 140px;
+}
+
+.footer {
+  background-color: #292929;
+  width: 100%;
+  min-height: 40px;
+  padding: 30px;
+  gap: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.anchorfooter {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
